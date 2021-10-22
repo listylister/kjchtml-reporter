@@ -1,6 +1,6 @@
 # karma-jasmine-cards-html-reporter
 
-[![npm version](https://img.shields.io/npm/v/karma-jasmine-html-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-reporter) [![npm downloads](https://img.shields.io/npm/dm/karma-jasmine-html-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-reporter)
+[![npm version](https://img.shields.io/npm/v/karma-jasmine-html-cards-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-cards-reporter) [![npm downloads](https://img.shields.io/npm/dm/karma-jasmine-html-cards-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-cards-reporter)
 
 Reporter that dynamically shows tests results at debug.html page.
 

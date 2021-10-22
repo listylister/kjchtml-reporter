@@ -6,11 +6,11 @@ Reporter that dynamically shows tests results at debug.html page.
 
 Jasmine 1.3 is not supported. For Jasmine < 3.0.0, use version 0.2.2
 
-![alt tag](/screenshots/reporter_1.png)
+![alt tag](/screenshots/reporter_3.png)
 
 You can also run a describe block, or a single test.
 
-![alt tag](/screenshots/reporter_2.png)
+![alt tag](/screenshots/reporter_4.png)
 
 ## Installation
 

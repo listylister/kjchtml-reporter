@@ -1,0 +1,36 @@
+{
+  "name": "karma-jasmine-html-cards-reporter",
+  "version": "1.0.1",
+  "description": "A Karma plugin. Dynamically displays tests results at debug.html page",
+  "main": "./src/index.js",
+  "keywords": [
+    "karma-plugin",
+    "karma-reporter",
+    "html",
+	"cards"
+  ],
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "repository": {
+    "url": "https://github.com/listylister/kjchtml-reporter"
+  },
+  "author": "",
+  "contributors": [
+    {
+      "name": "Chris Priestland",
+      "url": "https://github.com/listylister"
+    }
+  ],
+  "peerDependencies": {
+    "jasmine-core": ">=3.8",
+    "karma": ">=0.9",
+    "karma-jasmine": ">=1.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "*",
+    "jasmine-core": ">=3.8"
+  },
+  "readmeFilename": "README.md"
+}

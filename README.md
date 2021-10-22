@@ -1,4 +1,4 @@
-# karma-jasmine-html-reporter
+# karma-jasmine-cards-html-reporter
 
 [![npm version](https://img.shields.io/npm/v/karma-jasmine-html-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-reporter) [![npm downloads](https://img.shields.io/npm/dm/karma-jasmine-html-reporter.svg)](https://www.npmjs.com/package/karma-jasmine-html-reporter)
 
@@ -14,10 +14,10 @@ You can also run a describe block, or a single test.
 
 ## Installation
 
-You can simply install `karma-jasmine-html-reporter` as a devDependency by:
+You can simply install `karma-jasmine-html-cards-reporter` as a devDependency by:
 
 ```bash
-npm install karma-jasmine-html-reporter --save-dev
+npm install karma-jasmine-html-cards-reporter --save-dev
 ```
 
 ## Configuration
@@ -31,37 +31,8 @@ module.exports = function (config) {
 };
 ```
 
-#### With options
-
-In combination with multiple reporters you may want to disable terminal messages because it's already handled by another reporter.
-
-_Example using the 'karma-mocha-reporter' plugin_:
-
-```js
-// karma.conf.js
-module.exports = function (config) {
-	config.set({
-		// Combine multiple reporters
-		reporters: ["kjchtml", "mocha"],
-
-		jasmineHtmlReporter: {
-			suppressAll: true, // Suppress all messages (overrides other suppress settings)
-			suppressFailed: true, // Suppress failed messages
-		},
-	});
-};
-```
-
 You can pass a list of reporters as a CLI argument too:
 
 ```bash
 karma start --reporters kjchtml
 ```
-
-## Develop
-
-There's not much to this package.
-
-[`adapter.js`](src/lib/adapter.js), [`html.jasmine.reporter.js`](src/lib/html.jasmine.reporter.js), and [`jasmine.css`](src/css/jasmine.css) are copied with small adjustments from [`jasmine/lib/jasmine-core/boot.js`](https://github.com/jasmine/jasmine/blob/main/lib/jasmine-core/boot.js) and [`jasmine/lib/jasmine-core/jasmine-html.js`](https://github.com/jasmine/jasmine/blob/main/lib/jasmine-core/jasmine-html.js), and [`jasmine/lib/jasmine-core/jasmine.css`](https://github.com/jasmine/jasmine/blob/main/lib/jasmine-core/jasmine.css) respectively.
-
-Just pull over changes from Jasmine as needed. There is a script to help with that; just run `npm run build` and review the changes. Specifically, [`adapter.js`](src/lib/adapter.js) needs a lot of manual removals.

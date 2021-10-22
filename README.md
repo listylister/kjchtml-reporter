@@ -24,6 +24,11 @@ npm install karma-jasmine-html-cards-reporter --save-dev
 
 ```js
 // karma.conf.js
+
+plugins: [
+    require('karma-jasmine-html-cards-reporter'),
+]
+
 module.exports = function (config) {
 	config.set({
 		reporters: ["kjchtml"],
